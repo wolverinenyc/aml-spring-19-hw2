@@ -1,0 +1,20 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+# enable 3.7 without globally enabling sudo and dist: xenial for other build jobs
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+# command to install dependencies
+before_install:
+  - pip install -U pip
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)
+  - pip install pandas
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  - pytest # or pytest for Python versions 3.5 and below

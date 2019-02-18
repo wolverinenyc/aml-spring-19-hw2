@@ -1,0 +1,9 @@
+Estimator,Scaling,CV Score
+LinearRegression,noscaling,0.8188292356908246
+LinearRegression,scaling,0.8773331921939915
+Ridge,noscaling,0.8251905708426552
+Ridge,scaling,0.882688274695701
+Lasso,noscaling,0.820018744618015
+Lasso,scaling,0.8827666143132756
+ElasticNet,noscaling,0.6585756151380984
+ElasticNet,scaling,0.8244991988022056
